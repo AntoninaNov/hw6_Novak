@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-6">
+            <input type="text" id="input" class="form-control" placeholder="Enter text to reverse">
+            <br />
+            <span id="reversed" class="mt-2 d-block"></span>
+        </div>
+    </div>
+    <div class="month mb-4 text-center">
+        September 2023
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div id="calendar" class="d-inline-block">
+            <ul class="weekdays list-unstyled d-flex justify-content-between mb-3">
+                <li>Mo</li><li>Tu</li><li>We</li><li>Th</li><li>Fr</li><li>Sa</li><li>Su</li>
+            </ul>
+            <ul class="buttons list-unstyled d-flex flex-wrap justify-content-between"></ul>
+        </div>
+    </div>
+
+    <div id="task2" class="mt-4">
+        <div class="card w-75 mx-auto">
+            <img id="image" src="" class="card-img-top img-fluid rounded">
+            <div class="card-body">
+                <p id="explanation" class="card-text"></p>
+                <iframe id="video" class="embed-responsive-item" style="display: none;" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-6">
+            <button onclick="fetchValidGitHubProfile()" class="btn btn-success">Fetch Valid GitHub Profile</button>
+            <button onclick="fetchInvalidGitHubProfile()" class="btn btn-danger">Fetch Invalid GitHub Profile</button>
+            <div id="githubValidResponse" class="mt-2"></div>
+            <div id="githubErrorResponse" class="mt-2"></div>
+        </div>
+    </div>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>

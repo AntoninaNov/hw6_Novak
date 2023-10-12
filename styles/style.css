@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+body { font-family: Segoe UI, sans-serif; }
+
+.month {
+    padding: 0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.buttons button {
+    width: 13%;
+    margin: 0 0.2% 5px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+#calendar {
+    border: 2px solid rgb(53,121,246);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#task2 {
+    display: none;
+}
